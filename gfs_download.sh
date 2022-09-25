@@ -2,8 +2,9 @@
 
 # https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.YYYYMMDD/HH/atmos/
 RES=0p50
-DATE=`date -u +%Y%m%d`
-HH=00
+#DATE=`date -u +%Y%m%d`
+DATE=$1
+HH=$2
 for FR in `seq -f %03g 0 72`
 do
 	echo $FR
